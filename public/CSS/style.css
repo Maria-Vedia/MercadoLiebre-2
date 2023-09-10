@@ -1,0 +1,402 @@
+/*paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+/*-------body-----*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    font-weight: 300;
+    
+    margin-bottom: 1px;
+}
+
+/*-------header-----*/
+
+header {
+    width: 100%;
+    background-color: #EAC926; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.contenedor-encabezado {
+ display:flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ gap: 1em;
+}
+
+#logo {
+ width: 100%;
+ cursor: pointer;
+ background-position: center;
+}
+
+.buscador {
+ position: relative; 
+ 
+}
+
+#barra-buscador{
+    flex-direction: row;
+}
+
+input{
+    border: 0;
+    padding-right: 35px;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px 0 0 5px ; 
+}
+
+#boton{
+    background-color: #03264C;
+    padding: 10px 10px;
+    position: absolute;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    right: -1;
+    border-radius:0 5px 5px 0;
+    border-style: solid;
+    cursor: pointer;   
+}
+
+.formas-de-pago {
+    font-size: 14px;
+}
+
+.navegadores {
+    display:none;
+    justify-content: space-around;      
+}
+
+.navbar{ 
+    margin-top: 1.3em;
+    text-align: center;
+    color: black;
+    font-size: 12px;
+}
+
+.burger-menu  {
+    display: flex;
+    justify-content: center;
+    background-color: #03264c;
+    border-radius: 1em;
+    
+}
+
+#menu-hamburguesa { 
+    
+    color: beige;
+    height: 30px;
+    padding: 10px;
+    width: 30px;
+    cursor: pointer;    
+}
+
+/*----banner----*/
+
+#img-ban {
+   width: 100%;
+}
+
+/*-------main-----*/
+
+main {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.titulo {
+ margin-top: 1em;
+ margin-bottom: 1em;
+ font-size: 24px;
+}
+
+.productos {
+ /*width: 95%;*/
+ display:flex;
+ gap: 10px;
+ flex-direction: column;
+ flex-wrap: wrap;
+}
+
+#imagen {
+  max-width: 90%;
+  max-height: 90%;
+  
+}
+
+.productoA {
+ cursor: pointer;
+ background-color: white;
+ padding: 1.3em;
+ position: relative;
+}
+
+.detalles-producto {
+ margin-top: dashed 10px #666;
+ padding: 1.3em;
+ position: relative;
+}
+
+.precio{
+    font-size: 18px;
+
+}
+.descuento {
+ color: #39b54a;
+ text-align: left;
+ font-size: 18px;
+}
+
+.nombreDelProducto {
+    color: black;
+    font-size: 16px;
+}
+
+#auto {
+    display: block;
+    font-size: 20px;
+    padding: 5px;
+    color: #39b54a;
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+
+/*-------footer-----*/
+
+footer{
+    padding-top: 1em;
+    background-color: #fff;
+    padding-bottom: 1.2em;
+}
+
+.footer-items {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ text-align: center;
+ margin-bottom: 1.1em;
+ gap: 1.5em;
+ padding: 1.5em;
+}
+
+.items {
+text-align: center;
+}
+
+.icono-item {
+ font-size: 2em;
+ color: #03264c;
+}
+
+.Copyright {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+ 
+
+@media (min-width: 480px) {
+
+ /*----header---*/
+
+    .contenedor-encabezado { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    } 
+
+    #logo {
+        width: 70%;
+        cursor: pointer;
+        background-position: left;
+       }
+       
+    input{
+        width: 50%;
+           border: 0;
+           padding-right: 20px;
+           padding: 10px;
+           outline: none;
+           border-radius: 5px 0 0 5px ; 
+    }
+       
+    #boton {
+      position: relative;
+
+    }
+
+    .formas-de-pago {
+         width: 80%;
+           font-size: 14px;
+    }
+       
+
+    .burger-menu{
+        display: none;
+    }
+
+    .navegadores {   
+        display:flex; 
+        flex-direction: row;
+        font-size: 14px;  
+        justify-content: space-between;
+    }
+          
+    .navbar{
+     
+      margin-top: 1em;
+      gap: 100px;
+    }  
+
+    .navbar-items{
+        display: flex;
+        gap: 1.5em;
+        
+    }
+
+    a{
+        color: #03264C;
+    }
+
+    /*------main----*/
+    .productos {
+        flex-direction: row;
+        justify-content: space-between;
+       align-items: flex-start;
+    }
+
+    .productoA {
+        max-width: 47%;   
+    }
+
+    .productoA :hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    #img-ban {
+        width: 100%;
+     }
+     
+    #imagen {
+        position: relative;
+    }
+}
+
+@media (min-width:768px) {
+    
+    header {
+        display: flex;
+        flex-direction:center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    
+    #logo {
+      max-width:20%;
+      cursor: pointer; 
+    }  
+
+    .buscador{
+        max-width: 40%;
+    }
+
+    .formas-de-pago {
+        max-width: 30%;
+        font-size: 15px;
+    }
+   
+    .navegadores {   
+        display:flex; 
+        flex-direction: row;
+        font-size: 14px;  
+        justify-content: space-between;
+    }
+          
+    .navbar{
+     justify-content: space-between;
+      margin-top: 1.2em;
+      gap: 300px;
+    }  
+
+    .navbar-items{
+        display: flex;
+        gap: 1.5em;
+        
+    }
+
+    a{
+        color: #03264C;
+    }
+    
+    .burger-menu{
+        display: none;
+    }
+    
+    #img-ban {
+        width: 100%;
+     }
+     
+
+    main{
+        display: flex;
+        max-width: 85vw;
+    }
+
+    .productoA {
+        max-width: 23%;
+    }
+
+    footer {
+        display: flex;
+    }
+    .footer-items {
+        
+        flex-direction:row;
+        justify-content: space-between;
+        text-align: center;
+        margin-bottom: 1.1em;
+        gap: 1.5em;
+        padding: 1.5em;
+       }
+       
+
+    .items {
+          justify-content: space-between;
+           align-items: flex-start;
+           text-align: center;
+       }
+   
+}    
